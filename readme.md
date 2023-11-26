@@ -39,3 +39,7 @@ This command will compile SCSS to CSS, bundle JavaScript files, and start a loca
 
 4. Open in Browser:
    Open your browser and navigate to http://localhost:3000 to view the Pomodoro Timer.
+
+## Hosted Version
+
+A live version of the Barber Shop Landing Page is available [here](https://pomodoro-phi-two.vercel.app/).
