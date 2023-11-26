@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div>
+          <img src="./assets/logo-2.svg" alt="logo" />
+        </div>
+        <!-- timer -->
+        <div class="timer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+            <circle r="24" cx="25" cy="25" class="indicator"></circle>
+          </svg>
+          <div class="time">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+          </div>
+        </div>
+
+        <!-- controls -->
+        <div class="controls">
+          <button id="pause" class="btn">
+            <img src="./assets/icon-pause.svg" alt="timer controller" />
+          </button>
+          <button id="play" class="btn">
+            <img src="./assets/icon-play.svg" alt="timer controller" />
+          </button>
+          <button id="stop" class="btn">
+            <img src="./assets/icon-stop.svg" alt="timer controller" />
+          </button>
+        </div>
+
+        <form class="form">
+          <div class="input-group">
+            <input
+              type="number"
+              min="1"
+              placeholder="Enter minutes"
+              id="minInput"
+            />
+            <input
+              type="number"
+              min="1"
+              placeholder="Enter seconds"
+              id="secInput"
+            />
+          </div>
+          <button id="set">Set Timer</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./dist/script.js"></script>
+  </body>
+</html>
